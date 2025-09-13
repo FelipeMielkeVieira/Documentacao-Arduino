@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componentes Arduíno</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="container flex flex-col justify-center items-center">
+        <div class="w-3/4 mt-6">
+            <h2 class="text-3xl font-bold text-center">Componentes do Arduíno</h2>
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/blackboard.png" alt="BlackBoard Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">BlackBoard UNO R3</h2>
+                    <p>
+                        A BlackBoard UNO R3 é uma placada compátivel com Arduino,
+                        fabricada pela RoboCore, ela oferece funcionalidades semelhantes
+                        com uma placa original, mas possui melhorias como proteção contra
+                        polaridade inversa, maior confiabilidade nos componentes e acesso
+                        mais fácil aos pinos de comunicação (TX/RX).
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/workplate.png" alt="WorkPlate Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">WorkPlate 400</h2>
+                    <p>
+                            A WorkPlate 400 é uma base de trabalho em acrílico projetada
+                            para facilitar a montagem organizada de placas de
+                            desenvolvimento (como Arduino ou Raspberry Pi) junto com uma
+                            protoboard de 400 furos.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/protoboard.png" alt="Protoboard Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Protoboard de 400 Pontos</h2>
+                        <p>
+                            A protoboard de 400 pontos é uma placa de ensaio sem solda, usada
+                            para montagem rápida de circuitos eletrônicos, prototipagem, teste
+                            de componentes, simulações práticas etc. Permite inserir
+                            componentes como resistores, LEDs, fios de conexão, CI’s, usando
+                            conectores metálicos internos que criam ligações elétricas entre
+                            furos.
+                        </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/garraAnt.png" alt="GarraAnt Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Garra Ant</h2>
+                        <p>
+                            A "Garra Robótica Ant" é uma pequena garra robótica, projetada para
+                            segurar e manipular pequenos objetos em projetos de robótica e
+                            automação
+                        </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-8">
+                <div class="w-1/2 mr-8 flex justify-center">
+                    <img class="w-1/2 p-4" src="assets/ledRGB.png" alt="LED RGB Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">LED RGB</h2>
+                    <p>
+                        O LED RGB serve para criar uma ampla variedade de cores, combinando as luzes Vermelho,
+                        Azul e Verde, e são usados para fins decorativos.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+            
+            <div class="flex justify-between items-center w-full m-8">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/led.png" alt="Leds Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">LED</h2>
+                    <p>
+                        O LED (Diodo Emissor de Luz) é um dos componentes mais usados com Arduino e serve como ponto
+                        de partida para muitos projetos. Ele emite luz quando percorrido por corrente no sentido
+                        correto,
+                        exigindo atenção à polaridade (ânodo positivo e cátodo negativo) e ao uso de um resistor em
+                        série
+                        para limitar a corrente, já que normalmente opera entre 10 e 20 mA com queda de tensão de 2 a
+                        3,5 V
+                        dependendo da cor. No Arduino, pode ser ligado a um pino digital para acender, apagar ou variar
+                        o brilho
+                        via PWM, sendo usado como indicador, sinalizador ou em efeitos visuais; inclusive a placa já
+                        possui um LED
+                        interno conectado ao pino 13 para testes rápidos.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/servoMotor.png" alt="Micro Servo Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Micro Servo Motor</h2>
+                    <p>
+                        O Micro Servo Motor é um pequeno motor de corrente contínua com controle eletrônico interno
+                        que permite mover seu eixo em ângulos limitados, geralmente de 0° a 180°, com boa precisão.
+                        Diferente de motores comuns, ele não gira livremente, mas se posiciona em ângulos definidos
+                        por meio de um sinal PWM (largura de pulso modulada) enviado pelo Arduino. Possui três fios:
+                        alimentação (Vcc, normalmente 5V), terra (GND) e sinal (PWM). Por ser compacto e leve, é muito
+                        usado em projetos de robótica, braços mecânicos, maquetes, sistemas de direção em carrinhos e
+                        protótipos em geral, oferecendo fácil controle e movimentação precisa em pequenas aplicações.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/chaveMomentanea.png" alt="Chave Momentânea Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Chaves Momentâneas</h2>
+                    <p>
+                        As Chaves Momentâneas funcionam fechando o serviço elétrico apenas quando
+                        está sendo pressionad ,retornando para à sua posição padrão e abrindo o circuito
+                        quando é solta.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-3/4 p-4" src="assets/jumpers.png " alt="Jumpers Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Jumpers M/F</h2>
+                    <p>
+                        Os jumpers são cabos de conexão usados para ligar rapidamente componentes eletrônicos, placas 
+                        (como Arduino ou Raspberry Pi) e protoboards sem a necessidade de solda. Eles vêm em diferentes tipos:
+
+                        <br>• M/M (Male to Male): pinos macho nas duas extremidades, ideais para inserir diretamente em protoboards ou conectar pinos de módulos.
+
+                        <br>• M/F (Male to Female): um lado macho e outro fêmea, usados para ligar pinos de placas a protoboards ou módulos com pinos expostos.
+
+                        <br>• F/F (Female to Female): pinos fêmea nas duas extremidades, usados para conectar dois pinos macho, como entre módulos ou sensores.
+
+                        Os jumpers facilitam a prototipagem, mantendo o circuito organizado e permitindo alterações rápidas sem solda.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/sensorTemperatura.png " alt="Sensor de Temperatura Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Sensor de Temperatura e Umidade DHT11</h2>
+                    <p>
+                        O DHT11 é um sensor eletrônico que mede temperatura e umidade do ambiente, muito usado em projetos com Arduino e outros microcontroladores. 
+                        Ele fornece os dados em formato digital, facilitando a leitura e evitando a necessidade de conversão analógica. Suporta medição de temperaturas 
+                        de 0°C a 50°C com precisão de ±2°C e umidade de 20% a 90% com precisão de ±5%. Possui geralmente três ou quatro pinos: Vcc (alimentação), GND 
+                        (terra) e DATA (sinal digital), sendo usado em sistemas de monitoramento ambiental, estações meteorológicas, alarmes e automação residencial para 
+                        controlar ventilação, aquecimento ou irrigação.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/ci.png" alt="CI 4511 Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">CI 4511</h2>
+                    <p>
+                        O circuito integrado (CI) 4511, ou CD4511, é um decodificador BCD
+                        para display de 7 segmentos, que recebe um número binário (BCD)
+                        como entrada e o converte para um formato compreensível para um
+                        display de 7 segmentos, fazendo-o exibir o dígito decimal correspondente.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/buzzer.png " alt="Buzzer Imag" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Buzzer</h2>
+                    <p>
+                        O buzzer é um pequeno dispositivo eletrônico capaz de emitir sons quando recebe energia
+                        elétrica,
+                        muito usado em projetos com Arduino para criar alertas sonoros, alarmes ou sinais simples. Ele
+                        pode
+                        ser de dois tipos: passivo, que precisa de um sinal PWM para gerar diferentes frequências (sons
+                        variados),
+                        e ativo, que já possui um oscilador interno e emite um som fixo ao ser alimentado. Geralmente
+                        possui dois
+                        pinos: positivo (Vcc) e negativo (GND), podendo ser controlado diretamente por uma saída digital
+                        do Arduino.
+                        É um componente leve, barato e eficiente para dar feedback auditivo em protótipos e sistemas
+                        embarcados.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full p-4" src="assets/moduloJoystick.png" alt="Módulo Joystick Imag" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Módulo Joystick</h2>
+                    <p>
+                        O módulo joystick é um componente eletrônico que funciona de forma semelhante a um controle de
+                        videogame,
+                        permitindo medir movimentos em duas direções (X e Y) e, em muitos casos, detectar o botão de
+                        clique quando
+                        pressionado. Ele possui dois potenciômetros internos que variam a tensão conforme o movimento do
+                        bastão, gerando
+                        valores analógicos que podem ser lidos pelo Arduino para determinar a posição. Normalmente
+                        possui 5 pinos: Vcc
+                        (alimentação), GND (terra), VRx (saída X), VRy (saída Y) e SW (botão). É usado em projetos de
+                        robótica, controle
+                        de servos, carrinhos, câmeras motorizadas e interfaces interativas, permitindo controle
+                        intuitivo e preciso com movimentos manuais.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/3 mr-8">
+                    <img class="w-full mr-8" src="assets/sensorUltrassonico.png" alt="Sensor Ultrassônico Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Sensor Ultrassônico</h2>
+                    <p>
+                        O Sensor Ultrassônico detecta objetos e mede distancias utilizando ondas sonoras de alta
+                        frequência.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full" src="assets/knobPotenciometro.png" alt="Knob Imag" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Knob para Potenciômetro</h2>
+                    <p>
+                        O knob para potenciômetro é o botão ou manípulo que se encaixa no eixo de um potenciômetro,
+                        permitindo girá-lo manualmente para ajustar
+                        resistência e, consequentemente, controlar tensão ou corrente em um circuito. Com o Arduino, é
+                        usado para alterar valores analógicos lidos
+                        nos pinos de entrada, como volume de som, brilho de LED ou posição de servo motor. Os knobs
+                        facilitam a operação do potenciômetro, oferecendo
+                        melhor ergonomia, precisão e conforto, e geralmente possuem um encaixe cilíndrico ou tipo
+                        "D-shaft" que se adapta ao eixo do potenciômetro.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full mr-8" src="assets/potenciometro.png" alt="Potenciômetro Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Potenciômetro</h2>
+                    <p>
+                        O potenciômetro é um componente eletrônico que funciona como um resistor variável, permitindo ajustar 
+                        manualmente a resistência em um circuito girando seu eixo ou deslizando um controle. No Arduino, ele é
+                        usado para gerar valores analógicos que podem ser lidos por pinos analógicos (0 a 1023, no caso do Arduino UNO),
+                        permitindo controlar brilho de LEDs, volume de som, posição de servos, velocidade de motores e outros parâmetros.
+                        Geralmente possui três terminais: Vcc (alimentação), GND (terra) e wiper (ponto móvel que fornece a tensão variável),
+                        sendo muito útil em projetos interativos e de prototipagem.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full mr-8" src="assets/miniLaser.png" alt="Mini Laser Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Mini Laser</h2>
+                    <p>
+                        Emite luz laser controlada pelo microcontrolador Arduino para realizar 
+                        tarefas específicas, como detetar a interrupção de um feixe ou desenhar padrões.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-8">
+                <div class="w-1/2 mr-8 flex justify-center">
+                    <img class="w-1/4 mr-8" src="assets/ldr.png" alt="LDR Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">LDR 5mm</h2>
+                    <p>
+                        A LDR 5mm (Light Dependent Resistor, ou resistor dependente de luz) é um componente eletrônico cujo valor de resistência 
+                        varia conforme a intensidade da luz que incide sobre ele. Quanto mais luz recebe, menor sua resistência; quanto mais escuro, 
+                        maior a resistência. O “5mm” indica o diâmetro físico do encapsulamento do componente, útil para identificar ou encaixar em 
+                        protoboards e módulos. No Arduino, a LDR é normalmente conectada em um divisor de tensão para gerar um sinal analógico que 
+                        pode ser lido pelo microcontrolador, permitindo projetos como sensores de luminosidade, acendimento automático de LEDs, 
+                        alarmes ou medidores de luz.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full mr-8" src="assets/display.png" alt="Display Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Display</h2>
+                    <p>
+                        Um display de 7 segmentos para Arduino é um componente eletrônico 
+                        que, controlado pelo Arduino, exibe informações visuais como números 
+                        de 0 a 9 e algumas letras, utilizando sete LEDs dispostos em forma de "8".
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full mr-8" src="assets/resistores.png" alt="Resistores Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Resistores</h2>
+                    <p>
+                        Os resistores no Arduino são componentes passivos usados para limitar 
+                        o fluxo de corrente, proteger outros componentes (como LEDs) contra 
+                        danos, garantir um nível lógico definido em entradas (resistores pull-up/pull-down), 
+                        e atuar como divisores de tensão para criar níveis de voltagem diferentes. 
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full">
+                <div class="w-1/2 mr-8 p-4">
+                    <img class="w-full mr-8" src="assets/caboUSB.webp" alt="Cabo USB Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Cabo USB</h2>
+                    <p>
+                        O cabo USB (Universal Serial Bus) é um cabo padrão usado para transferência de dados 
+                        e/ou alimentação elétrica entre dispositivos eletrônicos. No contexto do Arduino, ele 
+                        é utilizado para:
+
+                        <br>• Programar a placa: enviar códigos do computador para o microcontrolador.
+
+                        <br>• Fornecer energia: alimentar o Arduino quando não se usa fonte externa.
+
+                        <br>• Comunicação serial: permitir que o Arduino envie dados de sensores ou receba comandos do computador.
+
+                        <br>Os cabos USB podem ter diferentes tipos de conectores (USB-A, USB-B, USB-C, Micro-USB), 
+                        dependendo do modelo da placa, e são essenciais para iniciar qualquer projeto de prototipagem 
+                        com Arduino.
+                    </p>
+                </div>
+            </div>
+            <hr/>
+
+            <div class="flex justify-between items-center w-full m-4">
+                <div class="w-1/2 mr-8">
+                    <img class="w-full mr-8" src="assets/chavePhillips.png" alt="Chave Phillips Image" />
+                </div>
+                <div class="w-fit">
+                    <h2 class="font-bold text-xl mb-4">Chave Phillips</h2>
+                    <p>
+                        A Chave Philips, também conhecida como chave de 
+                        fenda cruzada, é usada para apertar e afrouxar 
+                        parafusos com fenda em formato de cruz (formato de cruz grega).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
